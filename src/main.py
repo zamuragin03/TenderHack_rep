@@ -55,8 +55,8 @@ async def calculate_csv(file:UploadFile=File(...)):
     return FileResponse(Path(way,'files','Mister MISISter_2191574_TenderHack_Moscow.csv'), media_type="text/csv", filename='Mister MISISter_2191574')
     
     
-if __name__== "__main__":
-    uvicorn.run("main:app",host='0.0.0.0', port=8000, reload=True)
+# if __name__== "__main__":
+#     uvicorn.run("main:app",host='0.0.0.0', port=8000, reload=True)
     # uvicorn.run("main:app", reload=True)
     
 
