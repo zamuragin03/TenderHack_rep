@@ -1,5 +1,6 @@
-version: '3.8'
+version: "3.9"
 services:
-    app:
-      build: 
-        ports: 
+  web:
+    build: .
+    ports:
+      - "8000:46873"
