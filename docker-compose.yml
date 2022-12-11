@@ -3,4 +3,3 @@ services:
     app:
       build: 
         ports: 
-            - "46873:80"
