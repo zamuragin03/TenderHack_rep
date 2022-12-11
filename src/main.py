@@ -4,6 +4,7 @@ from schemas import Info, Result
 import uvicorn
 import os
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 import Tender_model 
 from pathlib import Path
 
