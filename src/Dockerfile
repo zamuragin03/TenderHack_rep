@@ -2,10 +2,15 @@ FROM python:3.9
 
 WORKDIR /src
 
-COPY ./api/requirements.txt ./
+COPY ./requirements.txt ./
 RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
 
-EXPOSE 8000
+COPY ./main.py ./
+COPY ./schemas.py ./
+COPY ["./short_train (2).xlsx", "./"]
+COPY ./Tender_model.py ./
 
-CMD ["python", "main.py"]
+EXPOSE 80
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
