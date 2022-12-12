@@ -37,6 +37,7 @@ The REST API to the example app is described below.
   "date": "string",
   "INN": "string"
 }
+```
 
 ### Response
 
