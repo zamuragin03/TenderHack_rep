@@ -1,4 +1,4 @@
-# Решение команды Mister MISISter на Tender Hakc MSK
+# Решение команды Mister MISISter на Tender Hack MSK
 
 В качестве основных сервисов сейчас предоставленны:
 
